@@ -1,0 +1,5 @@
+ProjectTitle: home-task-2
+
+PageList:
+- file: page.html
+  ready: 50

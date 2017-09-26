@@ -1,0 +1,70 @@
+---
+title: Index page
+
+workblocks: [
+{
+    img: 'img/ic-food.png',
+    caption: 'Lorem ipsum is simply dummy',
+    text: 'Lorem ipsum is simply dummy text of the printing and typesetting industry.'
+},
+{
+    img: 'img/ic-cart.png',
+    caption: 'Lorem ipsum is simply dummy',
+    text: 'Lorem ipsum is simply dummy text of the printing and typesetting industry.'
+},
+{
+    img: 'img/ic-gears.png',
+    caption: 'Lorem ipsum is simply dummy',
+    text: 'Lorem ipsum is simply dummy text of the printing and typesetting industry.'
+},
+{
+    img: 'img/ic-people.png',
+    caption: 'Lorem ipsum is simply dummy',
+    text: 'Lorem ipsum is simply dummy text of the printing and typesetting industry.'
+},
+{
+    img: 'img/ic-edit.png',
+    caption: 'Lorem ipsum is simply dummy',
+    text: 'Lorem ipsum is simply dummy text of the printing and typesetting industry.'
+},
+{
+	img: 'img/ic-email.png',
+    caption: 'Lorem ipsum is simply dummy',
+    text: 'Lorem ipsum is simply dummy text of the printing and typesetting industry.'
+}]    
+
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+
+{% include "partials/_header.html" %}
+	            <!-- works-triple -->
+					<section class="triple__block">
+             			<div class="container">
+              				<p class="subtitle">how it works</p>
+               				 <h1 class="h1">Lorem ipsum is simply</h1>
+               					{% for item in workblocks %}
+                  					<div class="triple__info__block">
+                     					<img class="triple__info__block__img" src="{{item.img}}" alt="">
+                       						<p class="triple__info__block__p triple__info__block__p--title"><a href="#">{{item.caption}}</a></p>
+                     						<p class="triple__info__block__p triple__info__block__p--text">{{item.text}}</p>
+                 					</div>
+                  				{% endfor %}
+                    		<div class="clear"></div>
+                		</div>
+            		</section>
+			<!-- contacts -->
+              <section class="contacts__block">
+               <div class="container">
+              	<h3>receive notification now</h3>
+              	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor.</p>
+              		<div class="adress">
+                      <input class="textbox" type="text" value="Your email adress..." />
+                      <button class="btn__1" >I'm ready!</button></div>
+                    </div>  
+                </div>
+              </section>
+{% include "partials/_footer.html" %}
+
+{% endblock %}

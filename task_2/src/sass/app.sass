@@ -1,0 +1,244 @@
+// done by riverco.de
+@import helpers/all
+@import generated/sprite-svg
+@import generated/sprite-png
+@import common
+@import layouts
+@import main
+
+
+*
+  margin: 0
+  padding: 0
+
+.clear
+  float: none
+  clear: both
+
+.container
+  width: 80%
+  margin: 0 auto
+  clear: both
+
+/*header
+
+header
+  width: 100%
+  background-image: url('/img/bg_header.png')
+  background-size: 100% 100%
+  padding-top: 20px
+
+.header__menu
+  float: right
+  ul li
+    display: inline
+    margin-right: 51px
+    &:nth-child(6)
+      margin-right: 0px
+    a
+      color: white
+      text-decoration: none
+      font-family: "Roboto" , sans-serif
+      font-size: 18px
+
+.header__logo
+  float: left
+  margin-left: 160px
+
+/*headerMore
+
+.header__more
+  width: 50%
+  float: left
+  margin-top: 217px
+  margin-left: 157px
+  h3
+    font-size: 36px
+    font-family: "Roboto" , sans-serif
+    color: rgb(255, 255, 255)
+  p
+    margin-top: 36px
+    margin-bottom: 80px
+    font-size: 20px
+    font-family: "Roboto" , sans-serif
+    color: rgb(255, 255, 255)
+    line-height: 1.8
+    width: 580px
+.ghost__btn
+  text-transform: uppercase
+  display: inline-block
+  width: 250px
+  height: 70px
+  padding: 8px
+  color: #fff
+  border: 3px solid #fff
+  outline: none
+  text-decoration: none
+  background: rgba(255, 255, 255, 0)
+  border-radius: 5px
+  font-family: "Lucida Grande", "Lucida Sans Unicode", Arial, sans-serif
+  letter-spacing: -1px
+  font-size: 20px
+  cursor: pointer
+  &:hover
+    background: rgba(255, 255, 255, 0.3)
+
+.header__image
+  margin-top: 110px
+  margin-bottom: 80px
+  width: 300px
+  float: right
+  img
+    width: 100%
+    height: 50%
+
+/*How it triple
+
+.triple__block
+  width: 100%
+  background-color: white
+  padding-top: 100px
+  padding-bottom: 80px
+.h1
+  text-align: center
+  font-size: 34px
+  font-family: "Roboto" , sans-serif
+  color: rgb(52, 52, 52)
+.subtitle
+  text-align: center
+  color: rgb(255, 132, 0)
+  font-size: 18px
+  font-family: "Roboto" , sans-serif
+  text-transform: uppercase
+  margin-bottom: 10px
+.triple__info__block
+  width: 31%
+  float: left
+  margin-right: 3.5%
+  margin-top: 80px
+  text-align: center
+  &:nth-child(3n+2)
+    margin-right: 0px
+.triple__info__block__img
+  display: block
+  width: 40%
+  margin: 0 auto
+.triple__info__block__p--title
+  color: rgb(52, 52, 52)
+  font-weight: 600
+  margin-top: 50px
+  margin-bottom: 20px
+  a
+    color: rgb(52, 52, 52)
+    text-decoration: none
+    &:hover
+      color: rgb(92, 92, 92)
+.triple__info__block__p
+  font-size: 18px
+  font-family: "Roboto" , sans-serif
+.triple__info__block__p--text
+  color: rgb(92, 92, 92)
+
+/*Contact Block(email)
+
+.contacts__block
+  width: 100%
+  background-image: url('/img/bg_contact.png')
+  background-size: 100% 100%
+  padding-top: 140px
+  padding-bottom: 152px
+  padding-left: 150px
+  color: white
+  h3
+    text-align: center
+    font-size: 30px
+    font-family: "Roboto" , sans-serif
+    color: rgb(255, 255, 255)
+    font-weight: bold
+    text-transform: uppercase
+    letter-spacing: 4px
+  p
+    width: 750px
+    margin: 0 auto
+    margin-top: 10px
+    text-align: center
+    font-size: 18px
+    font-family: "Roboto" , sans-serif
+    color: rgb(255, 255, 255)
+    line-height: 2
+  input[name="email"]
+    color: white
+    width: 610px
+    border: 1px solid white
+    border-radius: 3px
+    padding-top: 10px
+    padding-bottom: 10px
+    padding-left: 10px
+    background: none
+    outline: none
+    margin-right: 10px
+
+
+
+.adress
+  padding-left: 200px
+  padding-top: 70px
+
+.textbox
+  display: inline-block
+  width: 600px
+  height: 60px
+  padding: 8px
+  color: #fff
+  border: 3px solid #fff
+  outline: none
+  text-decoration: none
+  background: rgba(255, 255, 255, 0)
+  border-radius: 5px
+  margin-right: 20px
+  font-size: 16px
+  font-family: 'Roboto', sans-serif
+
+
+.btn__1
+  text-transform: uppercase
+  display: inline-block
+  width: 200px
+  height: 60px
+  padding: 8px
+  color: #ff8400
+  border: 3px solid #fff
+  outline: none
+  text-decoration: none
+  background: #fff
+  border-radius: 5px
+  font-size: 18px
+  font-family: 'Roboto', sans-serif
+  cursor: pointer
+  &:hover
+    background: #e9e9e9
+    border: 3px solid #e9e9e9
+
+/*footer
+
+footer
+  width: 100%
+  border-top: 2px solid #D8D8D8
+  background-color: white
+  padding-top: 10px
+  padding-bottom: 18px
+  padding-left: 180px
+  margin-top: 64px
+  span
+    font-size: 16px
+    font-family: "Roboto" , sans-serif
+    color: rgb(92, 92, 92)
+
+.socIcons
+  float: right
+  span
+    margin-right: 33px
+    &:nth-child(3)
+      margin-right: 0px
+    img
+      height: 30px
