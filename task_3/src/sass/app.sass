@@ -17,7 +17,9 @@
 
 .header__menu
   float: right
+  padding-top: 35px
   ul li
+    cursor: pointer
     display: inline
     margin-right: 51px
     &:nth-child(5)
@@ -65,7 +67,7 @@
   float: right 
 
 .side__rectangle
-  width: 220px
+  width: 180px
   height: 61px
   background-color: rgba(232, 96, 60, 0.5)
 
@@ -85,9 +87,10 @@
   padding-bottom: 30px
 
 .blog__icon
+  padding-top: 20px
   position: absolute
   left: -90px
-  heght: 75px
+  height: 75px
   width: 75px
   background-color: #e8603c
   text-align: center
@@ -110,10 +113,14 @@
 
 .blog__small__img
   position: absolute
-  top: -10px
-  left: 30px
+  top: 20px
+  left: 34px
   height: 75px
   float: left
+
+.blog__first__topic
+  float: left
+  padding-bottom: 30px
 
 .quote__text__info
   padding-top: 25px
@@ -129,17 +136,95 @@
   padding: 0
 
 .paggination
+  padding-bottom: 20px
   ul li
     display: inline-block
-    padding-left: 
+    text-align: center
     height: 26px
     width: 26px
-    background-color: red
+    background-color: #f3b29d
     cursor: pointer
     margin-right: 20px
+    &:hover
+     background-color: #e8663c
     a
       color: black
       text-decoration: none
       font-family: sans-serif
       font-size: 18px
+
+.h3
+  padding-top: 2px
+
+.block__sidebar
+  display: block
+  float: right
+  width: 25%
+
+
+.sidebar__content
+
+
+.gallery
+
+
+.gallery__photo
+  width: 50px
+  height: 50px
+  border: 1px solid #e8603c
+  background-color: #f3af9d
+  display: inline-block
+  margin-right: 5px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@mixin bebas_neue
+   font-family: 'bebas_neue',sans-serif
+@font-face
+   font-family: 'bebas_neue'
+   src: url('/fonts/bebas_neue.woff')
+
+@mixin bebasneue_bold
+  font-family: 'bebasneue_bold',sans-serif
+@font-face
+  font-family: 'bebasneue_bold'
+  src: url('/fonts/bebasneue_bold.woff')
+
+@mixin bebasneue_book
+  font-family: 'bebasneue_book',sans-serif
+@font-face
+  font-family: 'bebasneue_book'
+  src: url('/fonts/bebasneue_book.woff')
+
+@mixin bebasneue_light
+  font-family: 'bebasneue_light',sans-serif
+@font-face
+  font-family: 'bebasneue_light'
+  src: url('/fonts/bebasneue_light.woff')
+
+@mixin bebasneue_regular
+  font-family: 'bebasneue_regular',sans-serif
+@font-face
+  font-family: 'bebasneue_regular'
+  src: url('/fonts/bebasneue_regular.woff')
+
+@mixin bebasneue_thin
+  font-family: 'bebasneue_thin',sans-serif
+@font-face
+  font-family: 'bebasneue_thin'
+  src: url('/fonts/bebasneue_thin.woff')
 
