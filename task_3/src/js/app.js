@@ -1,7 +1,4 @@
-// example of simple includes for js
-//=include lib/sayHello.js
-//=include lib/jquery.min.js
-//=include lib/slick.min.js
-//=include lib/svgxuse.min.js
+import $ from 'jquery';
+import 'slick-carousel';
+$('.js-gallery').slick();
 
-sayHello();
