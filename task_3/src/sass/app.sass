@@ -9,6 +9,43 @@
   margin: 0
   padding: 0
 
+@mixin bebas_neue
+   font-family: 'bebas_neue',sans-serif
+@font-face
+   font-family: 'bebas_neue'
+   src: url('/fonts/bebas_neue.woff')
+
+@mixin bebasneue_bold
+  font-family: 'bebasneue_bold',sans-serif
+@font-face
+  font-family: 'bebasneue_bold'
+  src: url('/fonts/bebasneue_bold.woff')
+
+@mixin bebasneue_book
+  font-family: 'bebasneue_book',sans-serif
+@font-face
+  font-family: 'bebasneue_book'
+  src: url('/fonts/bebasneue_book.woff')
+
+@mixin bebasneue_light
+  font-family: 'bebasneue_light',sans-serif
+@font-face
+  font-family: 'bebasneue_light'
+  src: url('/fonts/bebasneue_light.woff')
+
+@mixin bebasneue_regular
+  font-family: 'bebasneue_regular',sans-serif
+@font-face
+  font-family: 'bebasneue_regular'
+  src: url('/fonts/bebasneue_regular.woff')
+
+@mixin bebasneue_thin
+  font-family: 'bebasneue_thin',sans-serif
+@font-face
+  font-family: 'bebasneue_thin'
+  src: url('/fonts/bebasneue_thin.woff')
+
+
 .container
   width: 940px
   margin: auto
@@ -17,18 +54,28 @@
 
 .header__menu
   float: right
-  padding-top: 35px
+  padding-top: 15px
   ul li
     cursor: pointer
     display: inline
-    margin-right: 51px
     &:nth-child(5)
       margin-right: 0px
-    a
-      color: black
-      text-decoration: none
-      font-family: sans-serif
-      font-size: 18px
+
+.header__a
+  text-decoration: none
+  color: #b9b9b9
+  font-size: 20px
+  font-weight: 400
+  text-transform: uppercase
+  margin-left: 28px
+  @include bebas_neue
+  &:hover
+    color: #f3af9d
+
+._active
+  color: #e8603c
+
+
 
 .h2
   width: 47px
@@ -45,10 +92,12 @@
   width: 87px
   height: 34px
   color: #e8603c
-  font-family: Bebas
-  font-size: 36px
-  font-weight: 400
+  font-size: 40px
   text-transform: uppercase
+  @include bebasneue_book
+
+.header__logo span
+  color: #f3af9d 
 
 .background_rectangles
   padding-top: 78px
@@ -135,28 +184,6 @@
 .link__text
   padding: 0
 
-.paggination
-  padding-bottom: 20px
-  ul li
-    display: inline-block
-    text-align: center
-    height: 26px
-    width: 26px
-    background-color: #f3b29d
-    cursor: pointer
-    margin-right: 20px
-    &:hover
-     background-color: #e8663c
-    &:active
-      background: #e8663c
-    a
-      color: black
-      text-decoration: none
-      font-family: sans-serif
-      font-size: 18px
-
-.h3
-  padding-top: 2px
 
 .block__sidebar
   display: block
@@ -184,49 +211,26 @@
 
 
 
+//pagination
+.pagination
+  margin-bottom: 50px
 
+.pagination__li
+  display: inline-block
+  width: 26px
+  height: 26px
+  background: #f3b29d
+  font-family: bebas_neue, sans-serif
+  cursor: pointer
+  &:hover
+    background: #e8663c
 
+.pagination__a
+  color: white
+  text-decoration: none 
+  font-size: 14px
+  line-height: 30px
+  padding-left: 9px
 
-
-
-
-
-
-
-
-@mixin bebas_neue
-   font-family: 'bebas_neue',sans-serif
-@font-face
-   font-family: 'bebas_neue'
-   src: url('/fonts/bebas_neue.woff')
-
-@mixin bebasneue_bold
-  font-family: 'bebasneue_bold',sans-serif
-@font-face
-  font-family: 'bebasneue_bold'
-  src: url('/fonts/bebasneue_bold.woff')
-
-@mixin bebasneue_book
-  font-family: 'bebasneue_book',sans-serif
-@font-face
-  font-family: 'bebasneue_book'
-  src: url('/fonts/bebasneue_book.woff')
-
-@mixin bebasneue_light
-  font-family: 'bebasneue_light',sans-serif
-@font-face
-  font-family: 'bebasneue_light'
-  src: url('/fonts/bebasneue_light.woff')
-
-@mixin bebasneue_regular
-  font-family: 'bebasneue_regular',sans-serif
-@font-face
-  font-family: 'bebasneue_regular'
-  src: url('/fonts/bebasneue_regular.woff')
-
-@mixin bebasneue_thin
-  font-family: 'bebasneue_thin',sans-serif
-@font-face
-  font-family: 'bebasneue_thin'
-  src: url('/fonts/bebasneue_thin.woff')
-
+.pagination_active
+  background: #e8603c

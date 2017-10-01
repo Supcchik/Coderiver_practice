@@ -1,5 +1,44 @@
 ---
 title: Index page
+
+menu: [
+{
+    menu: 'home',
+    link: '#',
+},
+{
+    menu: 'about us',
+    link: '#',
+},
+{
+    menu: 'blog',
+    link: '#',
+    active: '_active',
+},
+{
+    menu: 'portfolio',
+    link: '#',
+},
+{
+    menu: 'contact us',
+    link: '#',
+}]
+
+pagination: [
+{
+    pagination: '1',
+    active: 'pagination_active',
+    link: '#',
+},
+{
+    pagination: '2',
+    link: '#',
+},
+{
+    pagination: '3',
+    link: '#',
+}]
+
 ---
 {% extends "layouts/_layout.html" %}
 
@@ -29,7 +68,7 @@ title: Index page
 						<p class="small__grey__text"> April 15, 2012</p>
 						<h3 class="small__red__text">Tags</h3>
 						<p class="small__grey__text">Website | Design</p>
-						<h3 class="small__red__text">Comments</h3>
+						<h3 class="small__red__text">Comments</h3> 
 						<p class="small__grey__text">4</p>				
 					</div>
 					<!-- end post__statistic -->
@@ -60,12 +99,12 @@ title: Index page
 						<div class="dots__line"></div>
 						<nav class="sidebar__categories">
 							<ul>
-								<li>Video (3)</li>
-								<li>Sports (5)</li>
-								<li>Media (2)</li>
-								<li>Entertainment (7)</li>
-								<li>Life (4)</li>
-								<li>uper Cool Stuff (8)</li>
+								<li><a href="#">Video (3)</a></li>
+								<li><a href="#">Sports (5)</a></li>
+								<li><a href="#">Media (2)</a></li>
+								<li><a href="#">Entertainment (7)</a></li>
+								<li><a href="#">Life (4)</a></li>
+								<li><a href="#">Super Cool Stuff (8)</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -202,14 +241,14 @@ title: Index page
 		<!-- begin blog__block -->
 		<!-- begin paggination -->  
 			<nav class="paggination">
-            	<ul>
-            		<li><h3 class="h3"><a href="#">1</a></h3></li>
-            		<li><h3 class="h3"><a href="#">2</a></h3></li>
-            		<li><h3 class="h3"><a href="#">3</a></h3></li>
-            	</ul>
+				{% for item in pagination %}
+		           <li class="pagination__li {{item.active}}"><a class="pagination__a" href="{{item.link}}">{{item.pagination}}</a></li>
+		        {% endfor %}
 			</nav>
 		<!-- end paggination -->
 	</div>
 	<!-- end container -->	
 	
 {% endblock %}
+
+
