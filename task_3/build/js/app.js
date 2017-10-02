@@ -1,11 +1,6 @@
 'use strict';
 
-var _jquery = require('jquery');
+require('../js/slick-carousel.js');
 
-var _jquery2 = _interopRequireDefault(_jquery);
-
-require('slick-carousel');
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-(0, _jquery2.default)('.js-gallery').slick();
+$('.js-gallery').slick(); //import $ from 'jquery';
+//import 'slick-carousel';
