@@ -1,0 +1,315 @@
+// done by riverco.de
+@import helpers/all
+@import helpers/_mixins
+@import generated/sprite-svg
+@import lib/_slick.scss
+@import lib/_slick-theme.scss
+@import common
+@import main
+
+
+
+*
+  margin: 0px
+  padding: 0px
+
+@mixin bebas_neue
+   font-family: 'bebas_neue',sans-serif
+@font-face
+   font-family: 'bebas_neue'
+   src: url('/fonts/bebas_neue.woff')
+
+@mixin bebasneue_bold
+  font-family: 'bebasneue_bold',sans-serif
+@font-face
+  font-family: 'bebasneue_bold'
+  src: url('/fonts/bebasneue_bold.woff')
+
+@mixin bebasneue_book
+  font-family: 'bebasneue_book',sans-serif
+@font-face
+  font-family: 'bebasneue_book'
+  src: url('/fonts/bebasneue_book.woff')
+
+@mixin bebasneue_light
+  font-family: 'bebasneue_light',sans-serif
+@font-face
+  font-family: 'bebasneue_light'
+  src: url('/fonts/bebasneue_light.woff')
+
+@mixin bebasneue_regular
+  font-family: 'bebasneue_regular',sans-serif
+@font-face
+  font-family: 'bebasneue_regular'
+  src: url('/fonts/bebasneue_regular.woff')
+
+@mixin bebasneue_thin
+  font-family: 'bebasneue_thin',sans-serif
+@font-face
+  font-family: 'bebasneue_thin'
+  src: url('/fonts/bebasneue_thin.woff')
+
+.container
+  width: 67%
+  margin: auto
+  
+
+.hr
+ width: 100%
+ height: 10px
+ background-image: url('/icons/tiles.png')
+
+.hr_article
+  margin-top: 50px
+
+header
+  background: white
+  height: 50px
+  width: 100%
+  margin-top: 15px
+
+.logo
+  display: inline-block
+  color: #e8603c
+  text-decoration: none
+  font-size: 45px
+  font-weight: 400 
+  font-family: "bebas_neue" , sans-serif
+
+.logo span
+  color: #f3af9d  
+
+.header__nav
+  float: right
+  margin-top: 19px
+
+.header__li
+  display: inline-block
+
+.header__a
+  text-decoration: none
+  color: #b9b9b9
+  font-size: 20px
+  font-weight: 400
+  text-transform: uppercase
+  margin-left: 28px
+  font-family: "bebas_neue" , sans-serif
+  &:hover
+    color: #f3af9d
+
+._active
+  color: #e8603c
+
+.header-left
+  background: #f3af9d
+  height: 61px
+  width: 15.7%
+  margin-top: 15px
+  margin-bottom: 24px
+  float: left
+
+.header-info
+  background: #e8603c
+  height: 61px
+  width: 67%
+  margin-top:  15px
+  margin-bottom: 24px
+  margin-left: 0.8%
+  float: left
+ 
+.header-right
+  background: #f3af9d
+  height: 61px
+  width: 15.7%
+  margin-top:  15px
+  margin-bottom: 24px
+  float: right
+
+.caption
+  color: white
+  text-transform: uppercase
+  font-size: 31px
+  font-weight: 400
+  padding-left: 19px
+  padding-top: 13px
+  font-family: "bebas_neue" , sans-serif
+
+
+// blogContent
+.blog__block
+  float: left
+  width: 100%
+
+.blog__news
+  width: 70%
+  float: left
+
+.icon-block
+  position: absolute
+  left: -85px
+  background: #e8603c
+  height: 75px
+  width: 75px
+  float: left
+  line-height: 70px
+
+.icon-block img
+  vertical-align: middle
+  margin-left: 23px
+
+.img-block
+  width: 100%
+  margin-bottom: 25px
+
+.img-block img
+  width: 100%
+  height: 100%
+
+.h2
+  color: #e8663c
+  font-size: 18px
+  font-weight: 400
+  text-transform: uppercase
+  font-family: sans-serif;
+
+.h2 a
+  text-decoration: none
+  color: #e8663c
+  &:hover
+    color: #f3af9d
+
+.article__link
+  color: #a0a0a0
+  font-size: 12px
+  font-weight: 400
+  text-decoration: none
+  font-family: "Helvetica Neue", sans-serif
+
+.article__text
+  color: #414141
+  font-size: 12px
+  font-weight: 400
+  margin-top: 23px
+  font-family: "Helvetica Neue", sans-serif
+
+.article__quote
+  width: 100%
+  background-color: #f5f5f5
+  padding-top: 25px
+  padding-bottom: 25px
+  padding-left: 30px
+  padding-right: 30px
+
+.quote__icon
+  width: 25px
+  height: 20px
+  display: block
+  float: left
+
+.quote__p
+  color: #474747
+  font-size: 13px
+  font-family: "Helvetica Neue", sans-serif
+  font-style: italic
+  line-height: 18px
+  float: right
+  width: 93%
+
+.article__nav
+  width: 20%
+  float: left
+
+.article__info
+  width: 80%
+  float: left
+
+.clearfix:after 
+  visibility: hidden
+  display: block
+  content: ""
+  clear: both
+  height: 0
+
+.article__h3
+  text-transform: uppercase
+  color: #e8603c
+  font-size: 12px  
+  line-height: 20px
+  font-family: "bebas_neue" , sans-serif
+
+.article__nav__p
+  color: #bababa
+  font-size: 12px
+  line-height: 20px
+  font-family: "Helvetica Neue", sans-serif
+
+.article
+  position: relative
+  width: 100%
+  margin-bottom: 57px
+
+// sidebar
+.sidebar
+  width: 26%
+  float: right
+
+.h4
+  display: inline-block
+  vertical-align: top
+  text-transform: uppercase
+  position: relative
+  bottom: 2px
+  color: #e8603c
+  font-size: 16px
+  font-weight: 400
+  background: white
+  padding-right: 17px
+  font-family: "bebas_neue" , sans-serif
+
+.sidebar__h4
+  margin-bottom: 20px
+
+.sidebar__block
+  margin-bottom: 37px
+
+.gallery__photo
+  width: 63px
+  height: 63px
+  border: 1px solid #e8603c
+  background-color: #f3af9d
+  display: inline-block
+  margin-right: 5px
+
+.sidebar__categories a
+  text-decoration: none
+  color: #464646
+  font-size: 12px
+  font-weight: 400
+  font-family: "Helvetica Neue", sans-serif
+  &:hover
+    color: #f3af9d
+
+// pagination
+
+.pagination
+  margin-bottom: 50px
+
+.pagination__li
+  display: inline-block
+  width: 26px
+  height: 26px
+  background: #f3b29d
+  cursor: pointer
+  &:hover
+    background: #e8663c
+
+.pagination__a
+  color: white
+  text-decoration: none
+  font-size: 14px
+  line-height: 27px
+  padding-left: 8px
+  font-family: sans-serif;
+
+.pagination_active
+  background: #e8603c

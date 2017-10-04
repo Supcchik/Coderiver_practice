@@ -1,0 +1,211 @@
+---
+title: Index page
+date: April 15, 2012
+tags: Website | Design
+comments: 4
+
+menu: [
+{
+    menu: 'home',
+    link: '#',
+},
+{
+    menu: 'about us',
+    link: '#',
+},
+{
+    menu: 'blog',
+    link: '#',
+    active: '_active',
+},
+{
+    menu: 'portfolio',
+    link: '#',
+},
+{
+    menu: 'contact us',
+    link: '#',
+}]
+
+categories: [
+{
+    categories: 'Video (3)',
+    link: '#',
+},
+{
+    categories: 'Sports (5)',
+    link: '#',
+},
+{
+    categories: 'Media (2)',
+    link: '#',
+},
+{
+    categories: 'Entertainment (7)',
+    link: '#',
+},
+{
+    categories: 'Life (4)',
+    link: '#',
+},
+{
+    categories: 'Super Cool Stuff (8)',
+    link: '#',
+}]
+
+pagination: [
+{
+    pagination: '1',
+    active: 'pagination_active',
+    link: '#',
+},
+{
+    pagination: '2',
+    link: '#',
+},
+{
+    pagination: '3',
+    link: '#',
+}]
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}	
+
+	{% include "partials/_header.html" %}
+
+	<div class="container">
+	<div class="blog__block">
+	<!--  blog__news   -->
+	  <div class="blog__news">
+
+	  <!--  article   -->
+          <div class="article">
+             <div class="icon-block">
+	    	    <img src="icons/files.png" alt="">
+	         </div>
+	         <div class="img-block">
+	         	<div class="js-slider">
+                    <div><img src="img/slider_one.png" alt=""></div>
+                    <div><img src="img/jesus.png" alt=""></div>
+                    <div><img src="img/commet.jpg" alt=""></div>
+                    <div><img src="img/crying virgin.jpg" alt=""></div>
+                    <div><img src="img/rocket.jpg" alt=""></div>
+                    <div><img src="img/walpppr.jpg" alt=""></div>
+                </div>
+	         </div>
+	         <div class="article-block clearfix">
+	         <div class="article__nav">
+	         	<h3 class="article__h3">date</h3>
+	         	<p class="article__nav__p">{{date}}</p>
+	         	<h3 class="article__h3">tags</h3>
+	         	<p class="article__nav__p">{{tags}}</p>
+	         	<h3 class="article__h3">comments</h3>
+	         	<p class="article__nav__p">{{comments}}</p>
+	         </div>
+	         <div class="article__info">
+	         	<h2 class="h2"><a href="#">Top WordPress Themes of 2012</a></h2>
+             <p class="article__text">Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu. </p>
+              <p class="article__text">Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis ...</p>
+	         </div>
+	         </div>
+            <div class="hr hr_article"></div>
+	      </div>
+
+          <div class="article">
+        	 <div class="icon-block">
+        	   <img src="icons/file.png" alt="">
+             </div>
+             <div class="img-block">
+	         	<img src="img/jesus.png" alt="">
+	         </div>
+	         <div class="article-block clearfix">
+	         <section class="article__nav">
+	         	<h3 class="article__h3">date</h3>
+	         	<p class="article__nav__p">{{date}}</p>
+	         	<h3 class="article__h3">tags</h3>
+	         	<p class="article__nav__p">{{tags}}</p>
+	         	<h3 class="article__h3">comments</h3>
+	         	<p class="article__nav__p">{{comments}}</p>
+	         </section>
+	         <section class="article__info">
+	         	<h2 class="h2"><a href="#">Jesus Typography Wallpaper Giveaway!</a></h2>
+             <p class="article__text">Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei. Ne eos vidisse splendide instructior. Mei no latine praesent forensibus, te sed habemus tacimates, ad ipsum officiis constituto usu. </p>
+              <p class="article__text">Maecenas ipsum metus, semper hendrerit varius mattis, congue sit amet tellus. Aliquam ullamcorper dui sed magna posuere ut elementum enim rutrum. Nam mi erat, porta id ultrices nec, pellentesque vel nunc. Cras varius fermentum iaculis ...</p>
+	         </section>
+            </div>
+            <div class="hr hr_article"></div>
+          </div>
+
+          <section class="article">
+             <div class="icon-block ">
+        	   <img src="icons/brackets.png" alt="">
+             </div>
+             <div class="article__quote clearfix">
+             <img class="quote__icon" src="icons/brackets_orange.png" alt="">
+             	<p class="quote__p">Write anything you want here in this quotable area. Something unique you want people to learn about your website or some cool random fact. Its totally up to you. Write anything you want here in this quotable area. Something unique you want people to learn about your website or some cool random fact. Its totally up to you.</p>
+             </div>
+             <div class="hr hr_article"></div>
+          </section>
+
+          <section class="article">
+        	 <div class="icon-block">
+        	   <img src="icons/link.png" alt="">
+             </div>
+             <h2 class="h2"><a href="#">Some of the best freebies on the web</a></h2>
+             <a class="article__link">www.bestpsdfreebies.com</a>
+             <p class="article__text">Lorem ipsum dolor sit amet, sit an molestie neglegentur concludaturque. Possim hendrerit in usu. Iriure delectus mea at, vis dicit laudem ex, vel eu possim imperdiet consequuntur. Brute ipsum tincidunt vim ei.</p>
+             <div class="hr hr_article"></div>
+          </section>
+          <!--  end article   -->
+
+         <!--  pagination   -->
+          <div class="pagination">  
+            <nav class="pagination__nav">
+	            <ul class="pagination__ul">
+	            {% for item in pagination %}
+		           <li class="pagination__li {{item.active}}"><a class="pagination__a" href="{{item.link}}">{{item.pagination}}</a></li>
+		        {% endfor %}
+	            </ul>
+	        </nav>
+        </div>
+        <!--  end pagination   -->
+
+      </div>
+      <!--  end blog__news   -->
+       
+       <!--  sidebar   -->
+      <div class="sidebar">
+          <div class="sidebar__block">
+      	 <div class="hr sidebar__h4"><h4 class="h4">AbouT Jetro</h4></div>
+      	 <p class="article__text _jetro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praese nt libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elemen tum imperdiet. Duis sagittis ipsum.</p>
+      	 </div>
+      	 <div class="sidebar__block">
+      	    <section class="hr sidebar__h4"><h4 class="h4">Categories</h4></section>
+                <nav class="sidebar__categories">
+      	          <ul>
+      	            {% for item in categories %}
+      	  	         <li><a href="{{item.link}}">{{item.categories}}</a></li>
+      	  	        {% endfor %}
+      	          </ul>
+      	  </nav>
+      	 </div>
+      	 <div class="sidebar__block">
+      	    <section class="hr sidebar__h4"><h4 class="h4">Photo Gallery</h4></section>
+      	       <div class="sidebar__gellery">
+                  <div class="gallery__photo"></div>
+                  <div class="gallery__photo"></div>
+                  <div class="gallery__photo"></div>
+                  <div class="gallery__photo"></div>
+                  <div class="gallery__photo"></div>
+                  <div class="gallery__photo"></div>
+                  <div class="gallery__photo"></div>
+                  <div class="gallery__photo"></div>
+               </div>
+      	 </div>
+      </div>
+      <!--  end sidebar   -->
+
+    </div>
+</div>
+{% endblock %}
